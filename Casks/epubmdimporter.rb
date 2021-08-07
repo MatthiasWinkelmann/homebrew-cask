@@ -5,6 +5,6 @@ cask "epubmdimporter" do
   url "https://github.com/jaketmp/ePub-quicklook/releases/download/v#{version}/epub.mdimporter.zip"
   name "EPUB Spotlight"
   homepage "https://github.com/jaketmp/ePub-quicklook"
-
+  depends_on macos: "< :mojave"
   mdimporter "epub.mdimporter", target: "AA_epub.mdimporter"
 end
